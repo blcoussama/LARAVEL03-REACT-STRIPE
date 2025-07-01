@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'oussama',
             'email' => 'oussama@gmail.com',
             'password' => bcrypt('password123'),
+            'available_credits' => 50, // Explicitly set credits
         ]);
 
         Feature::create([
@@ -50,7 +51,7 @@ class DatabaseSeeder extends Seeder
             'credits' => 100,
         ]);
         Package::create([
-            'name' => 'GVolden Package',
+            'name' => 'Golden Package',
             'price' => 199.99,
             'credits' => 500,
         ]);

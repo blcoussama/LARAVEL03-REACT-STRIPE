@@ -14,7 +14,7 @@ export default function Index({ feature, answer }) {
     const submit = (e) => {
         e.preventDefault();
 
-        post(route("feature1.calculate"), {
+        post(route("feature2.calculate"), {
             onSuccess() {
                 reset();
             }
@@ -38,7 +38,7 @@ export default function Index({ feature, answer }) {
 
                 <div className="flex items-center justify-end mt-4 col-span-2">
                     <PrimaryButton className="ms-4" disabled={processing}>
-                        Calculate Sum
+                        Calculate Difference
                     </PrimaryButton>
                 </div>
             </form>

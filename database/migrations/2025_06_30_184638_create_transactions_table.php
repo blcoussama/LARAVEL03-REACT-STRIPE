@@ -16,7 +16,7 @@ return new class extends Migration {
             $table->decimal('price', 10, 2);
             $table->integer('credits');
             $table->string('session_id');
-            $table->foreignId('user_id')->constrained('user');
+            $table->foreignId('user_id')->constrained('users'); // Fixed: was 'user', now 'users'
             $table->foreignId('package_id')->constrained('packages');
             $table->timestamps();
         });

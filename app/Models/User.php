@@ -25,6 +25,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'available_credits', // Add this line
     ];
 
     /**
@@ -48,5 +49,21 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+
+    /**
+     * Decrease the user's available credits
+     */
+    public function decreaseCredits(int $credits): void
+    {
+        $this->decrement('available_credits', $credits);
+    }
+
+    /**
+     * Increase the user's available credits
+     */
+    public function increaseCredits(int $credits): void
+    {
+        $this->increment('available_credits', $credits);
     }
 }
