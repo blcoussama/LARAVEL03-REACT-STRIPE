@@ -45,7 +45,7 @@ export default function AuthenticatedLayout({ header, children }) {
                             </div>
                         </div>
 
-                        <div className="hidden sm:ms-6 sm:flex sm:items-center sm:ms-6 gap-3">
+                        <div className="hidden sm:flex sm:items-center sm:ms-6 gap-3">
                             <span className='text-white flex gap-3'>
                                 <img src="/img/coin.png" alt="" className='w-[20px]' />
                                 {user.available_credits} Credits
