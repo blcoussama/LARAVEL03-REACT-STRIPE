@@ -50,7 +50,7 @@ export default function AuthenticatedLayout({ header, children }) {
                                 <img src="/img/coin.png" alt="" className='w-[20px]' />
                                 {user.available_credits} Credits
                             </span>
-                            <Link href="/" className='text-white py-1 px-3 rounded border transition-colors hover:text-gray-800 hover:bg-white'>
+                            <Link href={route('credit.index')} className='text-white py-1 px-3 rounded border transition-colors hover:text-gray-800 hover:bg-white'>
                                 Get More
                             </Link>
                             <div className="relative ms-3">
